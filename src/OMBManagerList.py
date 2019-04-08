@@ -172,7 +172,7 @@ class OMBManagerList(Screen):
 		self["list"].onSelectionChanged.append(self.onSelectionChanged)
 		self["background"] = Pixmap()
 		self["key_red"] = Button(_('Rename'))
-		self["key_yellow"] = Button()
+		self['key_yellow'] = Button('Delete')
 		self["key_blue"] = Button(_('Menu'))
 		if BRANDING:
 			self["key_green"] = Button(_('Install'))
